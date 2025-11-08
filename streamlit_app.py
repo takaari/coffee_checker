@@ -14,7 +14,7 @@ page_bg = """
 st.markdown(page_bg, unsafe_allow_html=True)
 
 # ===== タイトル =====
-st.markdown("<h3 style='text-align: left; color: #5a4632;'>☕珈琲お得度比較☕</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: #5a4632;'>☕珈琲お得度比較☕</h3>", unsafe_allow_html=True)
 st.write("")
 
 st.markdown("<p style='color: #5a4632;'>2つのコーヒーについて、1円あたりに買えるグラム数を比較します。</p>", unsafe_allow_html=True)
