@@ -1,18 +1,18 @@
 import streamlit as st
-st.markdown("<h3 style='text-align: left;'>☕ 珈琲お得度比較</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: left;'>☕ 珈琲お得度比較 ☕</h3>", unsafe_allow_html=True)
 #st.title("☕ 珈琲お得度比較")
 
 st.write("2つのコーヒーについて、1円あたりに買えるグラム数を比較します。")
 
 # Aの情報入力
 st.subheader("Aのコーヒー")
-a_price = st.number_input("Aの値段（円）", min_value=1)
-a_weight = st.number_input("Aのグラム数（g）", min_value=1)
+a_price = st.number_input("Aの値段（円）", min_value=0)
+a_weight = st.number_input("Aのグラム数（g）", min_value=0)
 
 # Bの情報入力
 st.subheader("Bのコーヒー")
-b_price = st.number_input("Bの値段（円）", min_value=1)
-b_weight = st.number_input("Bのグラム数（g）", min_value=1)
+b_price = st.number_input("Bの値段（円）", min_value=0)
+b_weight = st.number_input("Bのグラム数（g）", min_value=0)
 
 if st.button("結果を表示"):
     a_per_yen = a_weight / a_price
