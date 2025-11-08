@@ -1,6 +1,6 @@
 import streamlit as st
-
-st.title("☕ コーヒーお得度チェッカー")
+st.markdown("<h3 style='text-align: left;'>☕ コーヒーお得度チェッカー</h3>", unsafe_allow_html=True)
+#st.title("☕ コーヒーお得度チェッカー")
 
 st.write("2つのコーヒーについて、1円あたりに買えるグラム数を比較します。")
 
