@@ -52,9 +52,27 @@ if st.button("結果を表示"):
             unsafe_allow_html=True
         )
 
-        if a_per_yen > b_per_yen:
-            st.success("✅ Aのコーヒーの方がお得です！")
-        elif b_per_yen > a_per_yen:
-            st.success("✅ Bのコーヒーの方がお得です！")
-        else:
-            st.info("🟰 同じ価値です。")
+    if a_per_yen > b_per_yen:
+        st.markdown(
+            "<div style='background-color:#e7d7c1; padding:12px; border-radius:8px; font-size:22px; color:#5a4632;'>"
+            "✅ Aのコーヒーの方がお得です！"
+            "</div>",
+            unsafe_allow_html=True
+        )
+
+    elif b_per_yen > a_per_yen:
+        st.markdown(
+            "<div style='background-color:#e7d7c1; padding:12px; border-radius:8px; font-size:22px; color:#5a4632;'>"
+            "✅ Bのコーヒーの方がお得です！"
+            "</div>",
+            unsafe_allow_html=True
+        )
+
+    else:
+        st.markdown(
+            "<div style='background-color:#e7d7c1; padding:12px; border-radius:8px; font-size:22px; color:#5a4632;'>"
+            "🟰 同じ価値です。"
+            "</div>",
+            unsafe_allow_html=True
+        )
+
