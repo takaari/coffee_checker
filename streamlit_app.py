@@ -43,8 +43,14 @@ if st.button("結果を表示"):
         a_per_yen = a_weight / a_price
         b_per_yen = b_weight / b_price
 
-        st.markdown(f"<p>☕ Aの1円あたりの量：<b>{a_per_yen:.3f} g</b></p>", unsafe_allow_html=True)
-        st.markdown(f"<p>☕ Bの1円あたりの量：<b>{b_per_yen:.3f} g</b></p>", unsafe_allow_html=True)
+        st.markdown(
+            f"<p style='font-size: 20px;'>☕ Aの1円あたりの量： <b>{a_per_yen:.3f} g</b></p>",
+            unsafe_allow_html=True
+        )
+        st.markdown(
+            f"<p style='font-size: 20px;'>☕ Bの1円あたりの量： <b>{b_per_yen:.3f} g</b></p>",
+            unsafe_allow_html=True
+        )
 
         if a_per_yen > b_per_yen:
             st.success("✅ Aのコーヒーの方がお得です！")
