@@ -11,7 +11,13 @@ page_bg = """
 }
 </style>
 """
-st.markdown(page_bg, unsafe_allow_html=True)
+st.markdown("""
+    <style>
+        label, .st-bx, .st-c5, .st-c4 {
+            color: black !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # ===== タイトル =====
 st.markdown("<h2 style='text-align: center; color: #5a4632;'>☕ 珈琲お得度比較 ☕</h2>", unsafe_allow_html=True)
@@ -41,8 +47,8 @@ if st.button("結果を表示"):
         st.markdown(f"<p style='color:#5a4632;'>☕ Bの1円あたりの量：<b>{b_per_yen:.3f} g</b></p>", unsafe_allow_html=True)
 
         if a_per_yen > b_per_yen:
-            st.success("<p style='color:#000000;'>✅ Aのコーヒーの方がお得です！</p>")
+            st.success("✅ Aのコーヒーの方がお得です！")
         elif b_per_yen > a_per_yen:
-            st.success("<p style='color:#000000;'>✅ Bのコーヒーの方がお得です！</p>")
+            st.success("✅ Bのコーヒーの方がお得です！")
         else:
-            st.info("<p style='color:#000000;'>🟰 同じ価値です。</p>")
+            st.info("🟰 同じ価値です。")
