@@ -41,8 +41,8 @@ if st.button("結果を表示"):
         st.markdown(f"<p style='color:#5a4632;'>☕ Bの1円あたりの量：<b>{b_per_yen:.3f} g</b></p>", unsafe_allow_html=True)
 
         if a_per_yen > b_per_yen:
-            st.success("✅ Aのコーヒーの方がお得です！")
+            st.success("<p style='color:#000000;'>✅ Aのコーヒーの方がお得です！</p>")
         elif b_per_yen > a_per_yen:
-            st.success("✅ Bのコーヒーの方がお得です！")
+            st.success("<p style='color:#000000;'>✅ Bのコーヒーの方がお得です！</p>")
         else:
-            st.info("🟰 同じ価値です。")
+            st.info("<p style='color:#000000;'>🟰 同じ価値です。</p>")
